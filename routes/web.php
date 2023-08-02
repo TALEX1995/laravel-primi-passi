@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $phrase = 'Hello World';
+    $phrase = 'Hello Class 100';
     return view('home', compact('phrase'));
-});
+})->name('home');
+
+Route::get('/students', function () {
+    return view('students.index');
+})->name('students');
