@@ -6,7 +6,15 @@
     <title>Students</title>
 </head>
 <body>
-    <h1>Ciao</h1>
-    <a href="{{ route('home')}}">Torna Indietro</a>
+    <header>
+        <a href="{{ route('home')}}">Torna Indietro</a>
+    </header>
+    
+    <ul>
+    @foreach ($students as $student)
+        <li>{{$student}}</li>
+    @endforeach
+    </ul>
+    
 </body>
 </html>

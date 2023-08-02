@@ -6,7 +6,10 @@
     <title>Laravel</title>
 </head>
 <body>
+    <header>
+        <a href="{{ route('students')}}">Studenti</a>
+    </header>
+
     <h1>{{$phrase}}</h1>
-    <a href="{{ route('students')}}">Studenti</a>
 </body>
 </html>

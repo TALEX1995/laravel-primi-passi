@@ -19,5 +19,10 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/students', function () {
-    return view('students.index');
+    $students = [
+        'Alex Tanase',
+        'Marco Careddu',
+        'Patric Tobola'
+    ];
+    return view('students.index', compact('students'));
 })->name('students');
